@@ -1,8 +1,12 @@
+import MyNavbar from "../components/MyNavbar"
 
 
 const Main = () => {
   return (
-    <div>Main</div>
+    <div>
+        <MyNavbar></MyNavbar>
+        
+    </div>
   )
 }
 
