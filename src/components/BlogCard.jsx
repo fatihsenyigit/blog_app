@@ -1,9 +1,27 @@
-
+import Button from "react-bootstrap/Button";
 
 const BlogCard = () => {
-  return (
-    <div>BlogCard</div>
-  )
-}
+  const URL = "https://jsonplaceholder.typicode.com/posts";
 
-export default BlogCard
+  const getUser = () => {
+    fetch(URL)
+      .then((response) => 
+        {
+          if(!response.ok) {
+           throw new Error('network response was not ok')
+        }
+        return response.json()
+      }
+    )
+      .then((data) => console.log(data))
+      .catch((error) => console.error("error:", error));
+  };
+
+  return (
+    <div>
+      <Button onClick={getUser}>Tikla</Button>
+    </div>
+  );
+};
+
+export default BlogCard;
