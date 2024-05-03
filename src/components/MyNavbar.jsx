@@ -16,7 +16,7 @@ function MyNavbar() {
         <div className="d-flex align-items-center gap-1">
           <p className="p-1 me-3 m-1 position-relative">
             Posts
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               99+
             </span>
           </p>
