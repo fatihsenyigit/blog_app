@@ -5,7 +5,7 @@ import { AiFillAppstore } from "react-icons/ai";
 import { FaUser } from "react-icons/fa";
 import { CgCircleci } from "react-icons/cg";
 
-function MyNavbar() {
+function MyNavbar({blogs}) {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
@@ -17,7 +17,7 @@ function MyNavbar() {
           <p className="p-1 me-3 m-1 position-relative">
             Posts
             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              99+
+              {blogs?.length}
             </span>
           </p>
           <PiBellRingingFill />
